@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coir Grid – Protect exposed soil. Support new growth.</title>
+<meta name="description" content="Coir Grid is a proposed open mesh made from coconut fibre, designed to help protect exposed soil and leave room for vegetation to grow.">
+<meta name="theme-color" content="#3f7a3a">
+<meta property="og:title" content="Coir Grid: protect exposed soil, support new growth">
+<meta property="og:description" content="A proposed coconut-fibre mesh for erosion-control and vegetation-establishment projects.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#f6f1e6;--surface:#fffaf0;--ink:#2b2018;--muted:#6a5b4d;--brand:#3f7a3a;--brand-ink:#fff;--husk:#6b4a30;--fibre:#c9a46a;--line:#e0d5c0;--soil:#7a5538;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1712;--surface:#262018;--ink:#f1e8d8;--muted:#b9aa95;--brand:#7fc277;--brand-ink:#14210f;--husk:#d9b48a;--fibre:#c9a46a;--line:#3a3025;--soil:#5b3f2a}}
+:root[data-theme="dark"]{--bg:#1c1712;--surface:#262018;--ink:#f1e8d8;--muted:#b9aa95;--brand:#7fc277;--brand-ink:#14210f;--husk:#d9b48a;--fibre:#c9a46a;--line:#3a3025;--soil:#5b3f2a}
+*{box-sizing:border-box}
+html{scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em;color:var(--ink)}
+h1{font-size:clamp(2.2rem,6vw,3.8rem)}h2{font-size:clamp(1.6rem,4vw,2.4rem)}h3{font-size:1.2rem}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--brand)}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;flex-wrap:wrap}
+.logo{font:700 1.3rem Georgia,serif;color:var(--husk);text-decoration:none;display:flex;gap:8px;align-items:center}
+nav{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+nav a{padding:6px 10px;text-decoration:none;color:var(--ink);font-size:.95rem;border-radius:6px}
+nav a:hover{background:var(--line)}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;background:var(--brand);color:var(--brand-ink);font-weight:600;text-decoration:none;border:2px solid var(--brand);cursor:pointer;font-size:1rem;font-family:inherit}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--husk)}
+nav a.btn{color:var(--brand-ink);padding:8px 16px}
+.hero{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center;padding:56px 0}
+.hero .lead{font-size:1.15rem;color:var(--muted)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px}
+.fig svg{width:100%;height:auto;display:block}
+.toggle{display:flex;gap:6px;margin-top:10px;justify-content:center}
+.toggle button{padding:8px 16px;border-radius:999px;border:2px solid var(--husk);background:transparent;color:var(--ink);font:inherit;font-size:.9rem;cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--husk);color:var(--bg)}
+figcaption{font-size:.85rem;color:var(--muted);text-align:center;margin-top:8px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s;padding:0;list-style:none;margin:24px 0 0}
+.steps li{counter-increment:s;border-left:4px solid var(--fibre);padding:4px 0 4px 16px}
+.steps li::before{content:counter(s);font:700 2rem Georgia,serif;color:var(--brand);display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.alt .card{background:var(--bg)}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.note{font-size:.92rem;color:var(--muted);border-left:4px solid var(--fibre);padding-left:12px;margin-top:20px}
+table{width:100%;border-collapse:collapse;margin-top:20px;font-size:.97rem}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+td:last-child{color:var(--muted);font-style:italic}
+.scroll{overflow-x:auto}
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+form{display:grid;gap:14px;max-width:560px;margin-top:20px}
+label{font-weight:600;font-size:.95rem;display:grid;gap:4px}
+input,select,textarea{font:inherit;padding:10px 12px;border-radius:8px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+.chk{display:flex;gap:10px;font-weight:400;align-items:flex-start}
+.chk input{margin-top:5px}
+#msg{padding:12px 14px;border-radius:8px;display:none;background:var(--surface);border:1.5px solid var(--brand)}
+#msg.err{border-color:#b3412f}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem}
+.fgrid{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.rain line{stroke:#5b8fb9;stroke-width:2;stroke-linecap:round;opacity:.7}
+@media (prefers-reduced-motion:no-preference){.rain line{animation:fall 1.2s linear infinite}.sprout{transition:opacity .6s,transform .6s;transform-origin:bottom}}
+@keyframes fall{from{transform:translateY(-20px);opacity:0}30%{opacity:.8}to{transform:translateY(60px);opacity:0}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}.ic{width:1.15em;height:1.15em;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.btn,.toggle button{gap:8px;justify-content:center}.card .ic{width:30px;height:30px;color:var(--brand);margin-bottom:8px;display:block}.cinfo{list-style:none;padding:0;margin:0 0 16px;display:grid;gap:10px}.cinfo li{display:flex;gap:10px;align-items:center}.cinfo .ic{color:var(--brand)}.cinfo a{color:var(--ink);font-weight:600}footer a{color:var(--ink)}footer .ic{vertical-align:-3px;margin-right:6px;color:var(--brand)}
+:root{--sky1:#cfe6ef;--sky2:#f6efdc}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--sky1:#22323a;--sky2:#3a3226}}:root[data-theme="dark"]{--sky1:#22323a;--sky2:#3a3226}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:6px 14px;border:1px solid var(--fibre);border-radius:999px;font-size:.88rem;color:var(--husk);background:var(--surface);margin:0 0 16px}
+.badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--fibre)}
+.btn{transition:filter .2s,transform .2s}.btn:hover{filter:brightness(1.1)}.btn:active{transform:translateY(1px)}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+.top{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:46px;height:46px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:flex;align-items:center;justify-content:center;z-index:25;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.top .ic{width:22px;height:22px}
+@media (max-width:820px){.about{grid-template-columns:1fr}}img,svg{max-width:100%}.btn,.toggle button,summary,nav a{min-height:44px;display:inline-flex;align-items:center}summary{display:list-item}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding:32px 0}.steps{grid-template-columns:1fr}section{padding:44px 0}.fgrid{flex-direction:column}}
+@media (max-width:600px){body{font-size:16px}.wrap{padding:0 16px}.bar{padding-block:8px}nav{width:100%;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}nav a{white-space:nowrap}.cta .btn{flex:1 1 100%;justify-content:center}.toggle{flex-wrap:wrap}.toggle button{flex:1 1 40%;justify-content:center}th,td{padding:8px}form{max-width:100%}input,select,textarea{font-size:16px}}
+@media (min-width:1280px){body{font-size:18px}.wrap{max-width:1180px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-4.5A8 8 0 1 1 21 12z"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15zM5 19l8-8"/></symbol>
+<symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></symbol>
+<symbol id="i-mountain" viewBox="0 0 24 24"><path d="m3 19 7-12 4 7 2-3 5 8z"/></symbol>
+<symbol id="i-road" viewBox="0 0 24 24"><path d="M8 3 5 21M16 3l3 18M12 4v3M12 11v3M12 18v3"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21V11M12 11C12 7 9 5 5 5c0 4 3 6 7 6zM12 13c0-3 2-5 6-5 0 3-2 5-6 5z"/></symbol>
+<symbol id="i-wave" viewBox="0 0 24 24"><path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/></symbol>
+</defs></svg>
+<header><div class="wrap bar">
+<a class="logo" href="#top" data-go="top"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><rect x="2" y="2" width="22" height="22" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2 9h22M2 17h22M9 2v22M17 2v22" stroke="currentColor" stroke-width="2"/></svg>Coir Grid</a>
+<nav aria-label="Main">
+<a href="#about" data-go="about">About</a><a href="#benefits" data-go="benefits">Benefits</a><a href="#applications" data-go="applications">Applications</a><a href="#how" data-go="how">How it works</a><a href="#faq" data-go="faq">FAQ</a><a class="btn" href="#contact" data-go="contact"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Contact</a>
+</nav></div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<p class="badge">Concept stage: prototype in development</p>
+<h1>Protect exposed soil. Support new growth.</h1>
+<p class="lead">Coir Grid is a proposed open mesh made from coconut fibre, designed to help protect exposed soil and leave room for vegetation to grow.</p>
+<div class="cta"><a class="btn" href="#contact" data-go="contact"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg>Discuss a project</a><a class="btn ghost" href="#about" data-go="about"><svg class="ic" aria-hidden="true"><use href="#i-compass"/></svg>Explore the product</a></div>
+</div>
+<figure class="fig" style="margin:0">
+<svg viewBox="0 0 600 380" role="img" aria-label="Concept illustration of a slope, first as bare soil with runoff channels, then covered by a coir mesh with plants growing through">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--sky1)"/><stop offset="1" style="stop-color:var(--sky2)"/></linearGradient>
+<radialGradient id="sun"><stop offset="0" stop-color="#ffe9a8"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/></radialGradient>
+<linearGradient id="soilg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--soil)"/><stop offset="1" stop-color="#3a2618"/></linearGradient>
+<clipPath id="slope"><path d="M0 150C150 150 350 210 600 250V380H0Z"/></clipPath>
+<pattern id="mesh" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(-14)"><path d="M0 14H26M14 0V26" stroke="#2b1a0c" stroke-width="6.5" opacity=".55"/><path d="M0 12.5H26M12.5 0V26" stroke="#d2ad72" stroke-width="5"/><path d="M0 11H26M11 0V26" stroke="#f0dab0" stroke-width="1.2" stroke-dasharray="2 3" opacity=".85"/></pattern>
+<g id="sp"><path d="M0 0V-17" stroke="#2f6a2b" stroke-width="3" stroke-linecap="round"/><path d="M0 -9C-9 -10 -14 -17 -14 -22C-6 -22 0 -16 0 -9Z" fill="#4f9a47"/><path d="M0 -14C9 -15 14 -22 14 -27C6 -27 0 -21 0 -14Z" fill="#6cb85f"/></g>
+</defs>
+<rect width="600" height="380" fill="url(#sky)"/>
+<circle cx="500" cy="70" r="70" fill="url(#sun)"/><circle cx="500" cy="70" r="20" fill="#ffe08a"/>
+<path d="M0 130C100 95 200 115 300 135S480 120 600 150V260H0Z" fill="#5f8a55" opacity=".3"/>
+<path d="M0 150C150 150 350 210 600 250V380H0Z" fill="url(#soilg)"/>
+<g clip-path="url(#slope)"><path d="M0 205C150 205 330 260 600 300M0 265C160 265 340 315 600 345" stroke="#000" stroke-opacity=".12" fill="none" stroke-width="2"/>
+<g fill="#000" opacity=".16"><ellipse cx="45" cy="195" rx="4" ry="2.5"/><ellipse cx="105" cy="235" rx="5" ry="3"/><ellipse cx="205" cy="222" rx="4" ry="2.5"/><ellipse cx="270" cy="280" rx="5" ry="3"/><ellipse cx="345" cy="250" rx="4" ry="2.5"/><ellipse cx="420" cy="295" rx="5" ry="3"/><ellipse cx="500" cy="262" rx="4" ry="2.5"/><ellipse cx="560" cy="318" rx="5" ry="3"/><ellipse cx="80" cy="310" rx="4" ry="2.5"/><ellipse cx="350" cy="335" rx="5" ry="3"/></g>
+<g fill="#fff" opacity=".08"><ellipse cx="150" cy="215" rx="4" ry="2"/><ellipse cx="300" cy="245" rx="5" ry="2.5"/><ellipse cx="460" cy="285" rx="4" ry="2"/><ellipse cx="230" cy="320" rx="5" ry="2.5"/></g></g>
+<g id="gullies" clip-path="url(#slope)" fill="none" stroke-linecap="round"><g stroke="#24150b" stroke-width="8" opacity=".65"><path d="M130 160C142 200 120 240 136 290S120 350 126 380"/><path d="M290 195C302 235 280 270 297 320S290 360 293 380"/><path d="M445 228C458 262 438 292 450 335"/></g><g stroke="#d9b48a" stroke-width="1.5" opacity=".35"><path d="M135 160C147 200 125 240 141 290S125 350 131 380"/><path d="M295 195C307 235 285 270 302 320S295 360 298 380"/><path d="M450 228C463 262 443 292 455 335"/></g><ellipse cx="128" cy="376" rx="42" ry="8" fill="#8a6540" opacity=".85"/><ellipse cx="295" cy="377" rx="36" ry="7" fill="#8a6540" opacity=".85"/></g>
+<g id="meshg" clip-path="url(#slope)" style="display:none"><rect width="600" height="380" fill="url(#mesh)"/><g stroke="#1d130a" stroke-width="3.5" stroke-linecap="round"><path d="M60 188l5 5M200 212l5 5M330 240l5 5M470 268l5 5M130 262l5 5M280 300l5 5M420 326l5 5M540 350l5 5"/></g></g>
+<g id="plants" style="display:none"><use href="#sp" transform="translate(80 175) scale(0.8)"/><use href="#sp" transform="translate(170 190) scale(0.9)"/><use href="#sp" transform="translate(260 215) scale(1)"/><use href="#sp" transform="translate(340 235) scale(1.05)"/><use href="#sp" transform="translate(430 255) scale(1.1)"/><use href="#sp" transform="translate(520 280) scale(1.2)"/><use href="#sp" transform="translate(120 235) scale(1)"/><use href="#sp" transform="translate(215 272) scale(1.15)"/><use href="#sp" transform="translate(320 305) scale(1.25)"/><use href="#sp" transform="translate(430 325) scale(1.3)"/><use href="#sp" transform="translate(540 340) scale(1.4)"/><use href="#sp" transform="translate(60 295) scale(1.2)"/><use href="#sp" transform="translate(480 360) scale(1.45)"/><use href="#sp" transform="translate(260 350) scale(1.4)"/></g>
+<g class="rain" id="rain"><line x1="50" y1="30" x2="44" y2="58"/><line x1="150" y1="50" x2="144" y2="78"/><line x1="250" y1="40" x2="244" y2="68"/><line x1="200" y1="100" x2="194" y2="128"/><line x1="350" y1="90" x2="344" y2="118"/><line x1="450" y1="110" x2="444" y2="138"/><line x1="550" y1="150" x2="544" y2="178"/></g>
+</svg>
+<div class="toggle" role="group" aria-label="Illustration view"><button type="button" id="bare" aria-pressed="true"><svg class="ic" aria-hidden="true"><use href="#i-mountain"/></svg>Bare soil</button><button type="button" id="grid" aria-pressed="false"><svg class="ic" aria-hidden="true"><use href="#i-grid"/></svg>With Coir Grid</button></div>
+<figcaption>Concept illustration of how the mesh is intended to work on a slope.</figcaption>
+</figure>
+</div>
+
+<section class="alt" id="problem"><div class="wrap">
+<h2>Exposed soil can be difficult to protect while plants establish.</h2>
+<p>Rain, runoff and wind can disturb bare soil, especially on slopes, embankments and some riverbanks. A suitable erosion-control method may help protect the surface while vegetation takes hold.</p>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2>Meet Coir Grid</h2>
+<div class="about"><div><p>Coir is a natural fibre from the outer husk of a coconut. Coir Grid is our proposed open mesh made from it. It is intended to cover exposed soil while allowing water and plants to pass through the openings.</p></div>
+<figure class="fig" style="margin:0"><svg viewBox="0 0 300 200" role="img" aria-label="Close-up illustration of an open coir mesh over soil"><defs><pattern id="wv" width="60" height="60" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)"><path d="M8 0V60M38 0V60" stroke="#8a643a" stroke-width="12"/><path d="M8 0V60M38 0V60" stroke="#c9a46a" stroke-width="12" stroke-dasharray="3 5" opacity=".6"/><path d="M0 8H60M0 38H60" stroke="#a9824f" stroke-width="12"/><path d="M0 8H60M0 38H60" stroke="#d9b98a" stroke-width="12" stroke-dasharray="3 5" opacity=".6"/></pattern></defs><rect width="300" height="200" fill="var(--soil)"/><rect width="300" height="200" fill="url(#wv)"/></svg><figcaption>Close-up illustration of an open coir mesh. Actual construction is to be confirmed.</figcaption></figure></div>
+<div class="grid">
+<div class="card"><h3>Material</h3><p>Coir fibre from coconut husks.</p></div>
+<div class="card"><h3>Form</h3><p>Open grid mesh, or coir geotextile.</p></div>
+<div class="card"><h3>Purpose</h3><p>Soil-surface protection, with support for vegetation establishment.</p></div>
+<div class="card"><h3>Status</h3><p>Concept. Specifications will be confirmed through design, prototyping and testing.</p></div>
+</div></div></section>
+
+<section class="alt" id="how"><div class="wrap">
+<h2>How it works</h2>
+<ol class="steps">
+<li><h3>Prepare the site</h3><p>Assess the soil, slope, water flow and project requirements.</p></li>
+<li><h3>Place and secure the grid</h3><p>Install the selected mesh using a method suited to the site and product specification.</p></li>
+<li><h3>Support vegetation</h3><p>Let suitable plants grow through the openings, following the planting and maintenance plan.</p></li>
+</ol>
+<p class="note">Detailed installation instructions will be published once confirmed for the actual product.</p>
+</div></section>
+
+<section id="benefits"><div class="wrap">
+<h2>Benefits</h2>
+<div class="grid">
+<div class="card"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg><h3>Coconut-fibre material</h3><p>Made from coir fibre obtained from coconut husks.</p></div>
+<div class="card"><svg class="ic" aria-hidden="true"><use href="#i-grid"/></svg><h3>Open mesh design</h3><p>Allows water to pass through and leaves openings for plants.</p></div>
+<div class="card"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><h3>Soil-surface support</h3><p>Intended to help protect exposed soil in suitable projects.</p></div>
+<div class="card"><svg class="ic" aria-hidden="true"><use href="#i-sprout"/></svg><h3>Nature-based option</h3><p>A natural-fibre option to evaluate alongside other erosion-control products.</p></div>
+</div></div></section>
+
+<section class="alt" id="applications"><div class="wrap">
+<h2>Possible applications</h2>
+<div class="grid">
+<div class="card"><svg class="ic" aria-hidden="true"><use href="#i-mountain"/></svg><h3>Slopes</h3><p>Hillsides and cut slopes needing a surface cover.</p></div>
+<div class="card"><svg class="ic" aria-hidden="true"><use href="#i-road"/></svg><h3>Roadside embankments</h3><p>Exposed soil beside roads and infrastructure.</p></div>
+<div class="card"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg><h3>Landscaping</h3><p>Garden and site-development projects.</p></div>
+<div class="card"><svg class="ic" aria-hidden="true"><use href="#i-sprout"/></svg><h3>Vegetation establishment</h3><p>Soil surfaces where grass or plants are being started.</p></div>
+<div class="card"><svg class="ic" aria-hidden="true"><use href="#i-wave"/></svg><h3>Water edges</h3><p>Selected riverbank projects, subject to technical review.</p></div>
+</div>
+<p class="note">Suitability depends on site conditions, product specifications and local requirements.</p>
+</div></section>
+
+<section id="details"><div class="wrap">
+<h2>Product details</h2>
+<p>We are not publishing figures until they are tested. These are the details still to be confirmed.</p>
+<div class="scroll"><table>
+<tr><th>Detail</th><th>Status</th></tr>
+<tr><td>Fibre type and source</td><td>To be confirmed</td></tr>
+<tr><td>Woven or non-woven construction</td><td>To be confirmed</td></tr>
+<tr><td>Mesh opening size</td><td>To be confirmed</td></tr>
+<tr><td>Roll width and length</td><td>To be confirmed</td></tr>
+<tr><td>Weight (GSM)</td><td>To be confirmed</td></tr>
+<tr><td>Tensile strength</td><td>To be confirmed through testing</td></tr>
+<tr><td>Expected service life</td><td>To be confirmed through testing</td></tr>
+<tr><td>Fixing or anchoring method</td><td>To be confirmed</td></tr>
+<tr><td>Price</td><td>To be added when available</td></tr>
+</table></div>
+</div></section>
+
+<section class="alt" id="sustain"><div class="wrap">
+<h2>Sustainability</h2>
+<p>Coir Grid is being developed around coir, a natural fibre obtained from coconut husks. Its environmental impact depends on how the fibre is sourced, processed, transported, installed and disposed of. We are working to document these details as the project develops.</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Frequently asked questions</h2>
+<details><summary>What is Coir Grid?</summary><p>A proposed open mesh made from coir fibre, intended for soil-surface protection and erosion-control applications.</p></details>
+<details><summary>What is coir?</summary><p>Fibre obtained from the outer husk of a coconut.</p></details>
+<details><summary>Where can it be used?</summary><p>Possible uses include slopes, embankments and landscaping. Suitability should be assessed for each site.</p></details>
+<details><summary>Does it stop all erosion?</summary><p>No. No erosion-control product is a guarantee. Results depend on soil, slope, water flow, product design, installation, vegetation and maintenance.</p></details>
+<details><summary>Can plants grow through it?</summary><p>The open-grid concept is intended to leave room for vegetation. Growth depends on the site and planting plan.</p></details>
+<details><summary>How is it installed?</summary><p>That depends on the final product specification and the site. Ask a qualified professional for project-specific guidance.</p></details>
+<details><summary>Can I buy it?</summary><p>Not yet. Coir Grid is currently a concept.</p></details>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap">
+<h2>Tell us about your project.</h2>
+<p>Share your project details and what you need. We will follow up with product information as it becomes available.</p>
+<ul class="cinfo">
+<li><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg>Byreddy Bhanu Teja</li>
+<li><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:bhanubyreddy7975@gmail.com">bhanubyreddy7975@gmail.com</a></li>
+<li><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+919493166489">+91 94931 66489</a></li>
+</ul>
+<div class="cta" style="margin-bottom:8px"><a class="btn" href="mailto:bhanubyreddy7975@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Email us</a><a class="btn ghost" href="tel:+919493166489"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Call us</a></div>
+<form id="f" novalidate>
+<label>Name<input id="n" name="name" required autocomplete="name"></label>
+<label>Organization (optional)<input name="org" autocomplete="organization"></label>
+<label>Email address<input id="e" type="email" name="email" required autocomplete="email"></label>
+<label>Project type<select name="type"><option>Slope or hillside</option><option>Roadside embankment</option><option>Landscaping</option><option>Riverbank or shoreline</option><option>Other</option></select></label>
+<label>Message<textarea id="m" name="message" rows="4" required></textarea></label>
+<label class="chk"><input id="c" type="checkbox"> I agree to be contacted about this inquiry.</label>
+<button class="btn" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg>Send inquiry</button>
+<div id="msg" role="status"></div>
+</form>
+<p class="note">This form opens a ready-to-send email in your email app. Nothing is stored on this site.</p>
+</div></section>
+</main>
+
+<footer><div class="wrap fgrid">
+<div><strong>Coir Grid</strong><br>A proposed coconut-fibre mesh for erosion-control projects.</div>
+<div>Byreddy Bhanu Teja<br><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:bhanubyreddy7975@gmail.com">bhanubyreddy7975@gmail.com</a><br><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+919493166489">+91 94931 66489</a></div>
+<div>© 2026 Coir Grid. Concept project; specifications to be confirmed.<br>Privacy: details you enter are used only to reply to your inquiry.</div>
+</div></footer>
+<a class="top" href="#top" data-go="top" aria-label="Back to top"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg></a>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+document.querySelectorAll('[data-go]').forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();var t=$(a.dataset.go);if(t)t.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})})});
+function view(on){
+$('meshg').style.display=on?'block':'none';$('plants').style.display=on?'block':'none';$('gullies').style.display=on?'none':'block';
+$('bare').setAttribute('aria-pressed',String(!on));$('grid').setAttribute('aria-pressed',String(on));
+}
+$('bare').onclick=function(){view(false)};$('grid').onclick=function(){view(true)};
+$('f').addEventListener('submit',function(ev){
+ev.preventDefault();var m=$('msg');m.style.display='block';m.className='';
+var email=/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($('e').value);
+if(!$('n').value.trim()||!email||!$('m').value.trim()){m.className='err';m.textContent='Please enter your name, a valid email address and a message.';return}
+if(!$('c').checked){m.className='err';m.textContent='Please tick the consent box so we know we may contact you.';return}
+var el=$('f').elements,mail='bhanubyreddy7975@gmail.com',nm=$('n').value.trim();var body='Name: '+nm+'\nOrganization: '+el.org.value+'\nEmail: '+$('e').value.trim()+'\nProject type: '+el.type.value+'\n\n'+$('m').value.trim();var a=document.createElement('a');a.href='mailto:'+mail+'?subject='+encodeURIComponent('Coir Grid inquiry from '+nm)+'&body='+encodeURIComponent(body);document.body.appendChild(a);a.click();a.remove();m.textContent='Thanks, '+nm+'. Your email app should open with this inquiry ready to send. If it does not, write to '+mail+'.';
+});
+})();
+</script>
+</body>
+</html>
